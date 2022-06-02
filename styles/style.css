@@ -1,0 +1,400 @@
+#encriptador-1 {
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+  background:#9AE2F8;
+}
+
+@font-face {
+    font-family: 'Champagne & Limousines';
+    src:url("../fonts/Champagne-&-Limousines.ttf");
+}
+
+
+#image1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+
+  position: absolute;
+  width: 120px;
+  height: 48px;
+  left: 40px;
+  top: 40px;
+}
+
+#right-panel {
+  position: absolute;
+  width: 400px;
+  height: 944px;
+  left: 1000px;
+  top: 40px;
+
+  /* White */
+
+  background: #FFFFFF;
+  /* shadow */
+
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+}
+
+#frame-3{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+
+  position: absolute;
+  width: 680px;
+  height: 67px;
+  left: 240px;
+  top: 885px;
+}
+
+#button-0{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 8px;
+
+  width: 328px;
+  height: 67px;
+
+  /* Dark blue/dark-blue-300 */
+
+  background: #0A3871;
+  border-radius: 24px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+#text-0{
+  width: 280px;
+  height: 19px;
+
+  font-family: 'Champagne-&-Limousines.ttf';
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 19px;
+  text-align: center;
+
+  /* White */
+
+  color: #FFFFFF;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+#button-1{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 8px;
+
+  width: 328px;
+  height: 67px;
+
+  /* Light gray */
+
+  background: #D8DFE8;
+  /* Dark blue/dark-blue-300 */
+
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+#text-1{
+  width: 280px;
+  height: 19px;
+
+  font-family: 'Champagne-&-Limousines.ttf';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 19px;
+  text-align: center;
+
+  /* Dark blue/dark-blue-300 */
+
+  color: #0A3871;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+
+}
+
+#image2 {
+
+  position: relative;
+  width: 336px;
+  height: 304px;
+  top: 283px;
+}
+
+#text-2 {
+  position: absolute;
+  width: 577px;
+  height: 577px;
+  left: 240px;
+  top: 168px;
+
+  font-family: 'Champagne-&-Limousines.ttf';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  /* identical to box height, or 48px */
+  overflow-x: visible;
+  line-height: normal;
+  white-space: normal;
+  text-decoration: none;
+
+
+
+  /* Dark blue/dark-blue-300 */
+
+  color: #0A3871;
+  border: none;
+    background: none;
+
+}
+
+#text-2:focus {
+  outline: none;
+    border: none;
+    background: none;
+}
+
+
+#frame-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  position: relative;
+  width: 336px;
+  height: 122px;
+  top: 319px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#text-3 {
+  width: 300px;
+  height: 58px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+  /* or 29px */
+
+  text-align: center;
+
+  /* Gray/gray-500 */
+
+  color: #343A40;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+
+#text-4{
+  width: 336px;
+  height: 48px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+
+  text-align: center;
+
+  /* Gray/gray-400 */
+
+  color: #495057;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+
+#frame-1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 229px;
+  height: 18px;
+  left: 240px;
+  top: 851px;
+
+}
+
+#text-5{
+  width: 205px;
+  height: 18px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  /* identical to box height, or 18px */
+
+
+  /* Gray/gray-400 */
+
+  color: #495057;
+
+  opacity: 0.8;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+}
+
+#image-5{
+  position: relative;
+  width: 16px;
+  height: 16px;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+ 
+}
+
+#encripted-text{
+  position: relative;
+  
+  height: 741px;
+ 
+  top: 72px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  left : 26px;
+  right: 26px;
+
+  /* or 36px */
+
+
+  /* Gray/gray-400 */
+
+  color: #495057;
+  overflow-y: scroll;
+
+}
+
+#encripted-text:-webkit-scrollbar-thumb {
+    background-image: linear-gradient(180deg, #D0368A 0%, #708AD4 99%);
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+    border-radius: 100px;
+}
+
+#button-copy {
+box-sizing: border-box;
+
+/* Auto layout */
+padding: 24px;
+gap: 8px;
+
+position: relative;
+width: 336px;
+height: 67px;
+margin-left: auto;
+margin-right: auto;
+left: 26px !important;
+top:  50px;
+
+
+/* Dark blue/dark-blue-300 */
+
+border: 1px solid #0A3871;
+border-radius: 24px;
+}
+
+#text-6 {
+  idth: 280px;
+  height: 19px;
+
+  font-family: 'Champagne-&-Limousines.ttf';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 19px;
+  text-align: center;
+
+  /* Dark blue/dark-blue-300 */
+
+  color: #0A3871;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}

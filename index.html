@@ -1,0 +1,138 @@
+  <head>
+    <div id="encriptador-1"></div>
+    <meta charset="utf-8">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <title>Encriptador</title>
+  </head>
+
+  <body>
+    <img src="images/logo.png" alt="Mi imagen de prueba" id="image1">
+    <textarea id="text-2" placeholder="Ingrese el texto aquí"></textarea>
+
+    <div id="frame-3">   
+      <button id="button-0"><b id="text-0">Encriptar</b></button>  
+      <button id="button-1"><b id="text-1">Desencriptar</b></button>  
+      
+    </div>
+    
+    <div id="right-panel">
+      <p id="encripted-text" hidden></p>
+      <button id="button-copy"><b id="text-6">Copiar</b></button>
+      <img src="images/Muñeco.png" alt="Persona sentada observando diamante con lupa" id="image2">
+
+      <div id="frame-5">
+          <b id="text-3">Ningún mensaje fue encontrado</b>
+          <b id="text-4">Ingrese el texto que desea encriptar o desencriptar</b>  
+          <b id="encripted-text"></b>
+          
+      </div>
+
+    </div>
+
+    
+    <div id="frame-1">
+      <img src="images/admiracion.png" alt="Simbolo admiracion dentro de un circulo" id="image-5">
+      <b id="text-5">Solo letras minúsculas y sin acentos</b>
+    </div>
+
+
+  </body>
+
+<script>
+  
+  var letras = ["a" , "e" , "i" , "o" , "u" ];
+  var conversion = ["ai" , "enter" , "imes" , "ober" , "ufat"];
+
+  var input = document.querySelector("#text-2");
+  input.focus();
+
+
+  document.querySelector("#button-copy").hidden = true;
+
+
+
+  function encriptar() {
+    document.querySelector("#image2").hidden = true;
+    var childrens = document.querySelector("#frame-5").children;
+    for (var i = 0; i < childrens.length; i++){
+        childrens[i].hidden = true;
+    };
+    
+    var encripted = document.querySelector("#encripted-text");
+    var unencripted = input.value;
+    
+    
+    var encriptedText = "";
+
+     for(var i = 0; i < unencripted.length; i++) {
+      var letra = unencripted.charAt(i);
+      if(letras.includes(unencripted.charAt(i))){
+        for(var j = 0; j < letras.length; j++) {
+          if(letras[j] == unencripted.charAt(i)){
+            letra = conversion[j]; 
+            break; 
+          }
+        }
+      }
+      encriptedText = encriptedText + letra;
+    }
+
+    encripted.textContent = encriptedText;
+    encripted.hidden = false; 
+    document.querySelector("#button-copy").hidden = false;
+
+
+
+  }
+   
+
+
+  function desencriptar(){
+   document.querySelector("#image2").hidden = true;
+    var childrens = document.querySelector("#frame-5").children;
+    for (var i = 0; i < childrens.length; i++){
+        childrens[i].hidden = true;
+    };
+    
+    var encripted = document.querySelector("#encripted-text");
+    var unencripted = input.value;
+    
+    unencripted = unencripted.replaceAll("ai", "a"); 
+    unencripted = unencripted.replaceAll("enter", "e"); 
+    unencripted = unencripted.replaceAll("imes", "i"); 
+    unencripted = unencripted.replaceAll("ober", "o"); 
+    unencripted = unencripted.replaceAll("ufat", "u"); 
+
+    encripted.textContent = unencripted;
+    encripted.hidden = false; 
+    
+  }
+        
+    input.value = "";
+    input.focus();
+
+  function copy() {
+    let text = document.querySelector("#encripted-text").textContent;
+    navigator.clipboard.writeText(text).then(function() {
+    console.log('Async: Copying to clipboard was successful!');
+  }, function(err) {
+    console.error('Async: Could not copy text: ', err);
+  });
+  }
+
+  
+
+  var button = document.querySelector("#button-0");
+  button.onclick = encriptar;
+
+  var button_1 = document.querySelector("#button-1");
+  button_1.onclick = desencriptar;
+
+  var button_2 = document.querySelector("#button-copy");
+  button_2.onclick = copy;
+
+
+
+
+
+</script>
